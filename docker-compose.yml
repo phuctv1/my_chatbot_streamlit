@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  codex-chatbot:
+    build: .
+    container_name: codex_ai_superapp
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./config.json:/app/config.json
+    environment:
+      - OPENAI_BASE_URL=https://codex.fosta.app/v1
+    deploy:
+      resources:
+        limits:
+          memory: 2G

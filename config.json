@@ -1,0 +1,9 @@
+{
+    "api_key": "sk-00eab046c62fd5b2-bwqwvqnq5a379mvh-b87607d2",
+    "base_url": "https://codex.fosta.app/v1",
+    "model": "claude-opus-5-5",
+    "temperature": 0.5,
+    "max_tokens": 4096,
+    "user_memory": "",
+    "system_prompt": ""
+}
